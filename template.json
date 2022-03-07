@@ -54,8 +54,8 @@
             "templates": [
                 "base"
             ],
-            "duration": "one round",
-            "range": "touch",
+            "duration": "",
+            "range": "",
             "qualities": "",
             "absences": ""
         },

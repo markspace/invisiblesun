@@ -1,0 +1,46 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
+    </header>
+    <div>
+        <p>Aggregate</p>
+    </div>
+    <div>
+        <textarea name="data.description">{{data.data.description}}</textarea>
+
+        <table>
+            <tr>
+                <td>Duration</td>
+                <td>
+                    <select name="data.duration">
+                        {{#select data.data.duration}}
+                        {{#each config.durations as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Range</td>
+                <td>
+                    <select name="data.range">
+                        {{#select data.data.range}}
+                        {{#each config.ranges as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <p>Qualities</p>
+        <textarea name="data.qualities">{{data.data.qualities}}</textarea>
+        <p>Absences</p>
+        <textarea name="data.absences">{{data.data.absences}}</textarea>
+
+    </div>
+</form>

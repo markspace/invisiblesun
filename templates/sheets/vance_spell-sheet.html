@@ -4,7 +4,7 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
     <div>
-        <p>Spell</p>
+        <p>Vancian Spell</p>
     </div>
     <div>
         <table>
@@ -43,6 +43,22 @@
                         {{/select}}
                     </select>
                 </td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>
+                    <select name="data.class">
+                        {{#select data.data.class}}
+                        {{#each config.classes as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Size</td>
+                <td><input name="data.size" type="text" value="{{data.data.size}}" data-dtype="Number" /></td>
             </tr>
         </table>
         <textarea name="data.description">{{data.data.description}}</textarea>

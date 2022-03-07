@@ -4,7 +4,7 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
     </header>
     <div>
-        <p>Spell</p>
+        <p>Object of Power</p>
     </div>
     <div>
         <table>
@@ -45,7 +45,11 @@
                 </td>
             </tr>
         </table>
+        <p>Description</p>
         <textarea name="data.description">{{data.data.description}}</textarea>
+        <p>Form</p>
+        <textarea name="data.form">{{data.data.form}}</textarea>
+        <p>Footnote</p>
         <textarea name="data.footnote">{{data.data.footnote}}</textarea>
     </div>
 </form>
