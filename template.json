@@ -1,0 +1,78 @@
+{
+    "Actor": {
+        "types": [
+            "pc",
+            "npc"
+        ],
+        "templates": {},
+        "pc": {},
+        "npc": {}
+    },
+    "Item": {
+        "types": [
+            "spell",
+            "incantation",
+            "ephemera_object",
+            "aggregate",
+            "vance_spell",
+            "object_of_power",
+            "skill"
+        ],
+        "templates": {
+            "base": {
+                "description": ""
+            },
+            "magic": {
+                "level": 0,
+                "depletion": "",
+                "color": "",
+                "enhancement": 0,
+                "facet": "",
+                "footnote": ""
+            }
+        },
+        "spell": {
+            "templates": [
+                "base",
+                "magic"
+            ]
+        },
+        "incatation": {
+            "templates": [
+                "base",
+                "magic"
+            ]
+        },
+        "ephemera_object": {
+            "templates": [
+                "base",
+                "magic"
+            ],
+            "form": ""
+        },
+        "aggregate": {
+            "templates": [
+                "base"
+            ],
+            "duration": "one round",
+            "range": "touch",
+            "qualities": "",
+            "absences": ""
+        },
+        "vance_spell": {
+            "templates": [
+                "base",
+                "magic"
+            ],
+            "class": "alpha",
+            "size": 1
+        },
+        "object_of_power": {
+            "templates": [
+                "base",
+                "magic"
+            ],
+            "form": ""
+        }
+    }
+}

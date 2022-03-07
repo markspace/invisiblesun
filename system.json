@@ -1,0 +1,26 @@
+{
+    "name": "invisiblesun",
+    "title": "Invisible Sun",
+    "description": "",
+    "author": "markd",
+    "version": 0.01,
+    "minimumCoreVersion": "9.251",
+    "compatibleCoreVersion": "9.255",
+    "esmodules": [
+        "invisiblesun.js"
+    ],
+    "styles": [
+        "invisiblesun.ccs"
+    ],
+    "packs": [],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "gridDistance": 5,
+    "primaryTokenAttribute": "wounds",
+    "secondaryTokenAttribute": "injuries"
+}

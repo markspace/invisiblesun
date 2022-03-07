@@ -1,0 +1,36 @@
+{
+    "is":{
+        "colors":{
+            "none":"",
+            "silver":"Silver",
+            "green":"Green",
+            "blue":"Blue",
+            "indigo":"Indigo",
+            "grey":"Grey",
+            "pale":"Pale",
+            "red":"Red",
+            "gold":"Gold",
+            "invisible":"Invisible"
+        },
+        "facets":{
+            "none":"",
+            "curse":"Curse",
+            "night":"Night",
+            "day":"Day",
+            "midnight":"Midnight",
+            "legacy":"The Legacy",
+            "dark":"The Dark",
+            "metamagic":"Metamagic",
+            "divination":"Divination",
+            "conjuration":"Conjuration",
+            "teleportation":"Teleportation",
+            "death":"Death",
+            "fire":"Fire",
+            "cold":"Cold",
+            "water":"Water",
+            "earth":"Earth",
+            "air":"Air",
+            "sound":"Sound"
+        }
+    }
+}
