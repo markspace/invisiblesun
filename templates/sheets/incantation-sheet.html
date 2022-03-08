@@ -1,7 +1,7 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
     </header>
     <div>
         <p>Incantation</p>
@@ -12,6 +12,14 @@
                 <td>Level</td>
                 <td><input name="data.level" type="text" value="{{data.data.level}}" data-dtype="Number" /></td>
             </tr>
+            <tr>
+                <td>Enhancement</td>
+                <td><input name="data.enhancement" type="text" value="{{data.data.enhancement}}" data-dtype="Number" />
+                </td>
+            </tr>
+        </table>
+        {{editor content=data.data.description target="data.description" button=true owner=owner editable=true}}
+        <table>
             <tr>
                 <td>Depletion</td>
                 <td><input name="data.depletion" type="text" value="{{data.data.depletion}}" /></td>
@@ -28,10 +36,7 @@
                     </select>
                 </td>
             </tr>
-            <tr>
-                <td>Enhancement</td>
-                <td><input name="data.enhancement" type="text" value="{{data.data.enhancement}}" data-dtype="Number" /></td>
-            </tr>
+
             <tr>
                 <td>Facet</td>
                 <td>
@@ -45,7 +50,6 @@
                 </td>
             </tr>
         </table>
-        <textarea name="data.description">{{data.data.description}}</textarea>
         <textarea name="data.footnote">{{data.data.footnote}}</textarea>
     </div>
 </form>
