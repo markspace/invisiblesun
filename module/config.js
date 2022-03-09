@@ -56,3 +56,20 @@ invisiblesun.durations = {
     "medium": "is.durations.medium",
     "long": "is.durations.long"
 }
+
+invisiblesun.royalty = {
+    "none" : "",
+    "sovereign": "is.royalty.sovereign",
+    "nemesis":"is.royalty.nemesis",
+    "defender":"is.royalty.defender",
+    "apprentice":"is.royalty.apprentice",
+    "companion":"is.royalty.companion",
+    "adept":"is.royalty.adept"
+}
+
+invisiblesun.families = {
+    "secrets": "is.families.secrets",
+    "visions": "is.families.visions",
+    "mysteries": "is.families.mysteries",
+    "notions": "is.families.notions"
+}

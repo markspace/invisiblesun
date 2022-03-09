@@ -1,0 +1,82 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <td>Value</td>
+                <td><input name="data.value" type="text" value="{{data.data.value}}" data-dtype="Number" /></td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>
+                    <select name="data.family">
+                        {{#select data.data.family}}
+                        {{#each config.families as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Meanings</td>
+                <td><input name="data.meanings" type="text" value="{{data.data.meanings}}" />
+                </td>
+            </tr>
+        </table>
+        {{editor content=data.data.description target="data.description" button=true owner=owner editable=true}}
+        <p>Divination</p>
+        {{editor content=data.data.divination target="data.divination" button=true owner=owner editable=true}}
+
+        <p>Game Narrative</p>
+        {{editor content=data.data.game_narrative target="data.game_narrative" button=true owner=owner editable=true}}
+
+        <p>Joy</p>
+        {{editor content=data.data.joy target="data.joy" button=true owner=owner editable=true}}
+
+        <p>Dispair</p>
+        {{editor content=data.data.dispair target="data.dispair" button=true owner=owner editable=true}}
+
+        <table>
+            <tr>
+                <td>Enhanced</td>
+                <td>
+                    <select name="data.enhanced">
+                        {{#select data.data.enhanced}}
+                        {{#each config.colors as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Diminished</td>
+                <td>
+                    <select name="data.diminished">
+                        {{#select data.data.diminished}}
+                        {{#each config.colors as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Royalty</td>
+                <td>
+                    <select name="data.royalty">
+                        {{#select data.data.royalty}}
+                        {{#each config.royalty as |name value|}}
+                        <option value="{{value}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>

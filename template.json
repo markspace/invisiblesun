@@ -1,11 +1,56 @@
 {
     "Actor": {
         "types": [
-            "pc",
+            "vance",
+            "maker",
+            "weaver",
+            "goetic",
+            "apostate",
             "npc"
         ],
-        "templates": {},
-        "pc": {},
+        "templates": {
+            "health":{
+                "injuries":{
+                    "value":0,
+                    "max":3
+                },
+                "wounds":{
+                    "value":0,
+                    "max":3
+                },
+                "anguish":{
+                    "value":0,
+                    "max":3
+                }
+            },
+            "vislae": {
+                "style":"",
+                "heart":"",
+                "forte":"",
+                "soul":"",
+                "home":"",
+                "neighborhood":"",
+                "shadow_skill":"",
+                "shadow_memento":"",
+                "quirk":"",
+                "connections":"",
+                "npc_bonds":"",
+                "acumen":0,
+                "crux":0,
+                "certes":0,
+                "qualia":0,
+                "joy":0,
+                "despair":0
+
+
+
+            }
+        },
+        "vance": {},
+        "maker": {},
+        "weaver": {},
+        "goetic": {},
+        "apostate": {},
         "npc": {}
     },
     "Item": {
@@ -16,7 +61,8 @@
             "aggregate",
             "vance_spell",
             "object_of_power",
-            "skill"
+            "skill",
+            "sooth_card"
         ],
         "templates": {
             "base": {
@@ -73,6 +119,22 @@
                 "magic"
             ],
             "form": ""
+        },
+        "sooth_card": {
+            "templates": [
+                "base"
+            ],
+            "value": 0,
+            "family": "",
+            "meanings": "",
+            "divination": "",
+            "game_narrative": "",
+            "joy": "",
+            "dispair": "",
+            "enhanced": "",
+            "diminished": "",
+            "royalty": ""
+
         }
     }
 }

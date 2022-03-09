@@ -50,6 +50,21 @@
             "short": "Short",
             "medium": "Medium",
             "long": "Long"
+        },
+        "royalty": {
+            "none": "",
+            "sovereign": "Sovereign",
+            "nemesis": "Nemesis",
+            "defender": "Defender",
+            "apprentice": "Apprentice",
+            "companion": "Companion",
+            "adept": "Adept"
+        },
+        "families": {
+            "secrets": "Secrets Ravens Books Flame",
+            "visions": "Visions Swans Blades Water",
+            "mysteries": "Mysteries Rates Mirrors Stone",
+            "notions": "Notions Cats Clocks Wind"
         }
     }
 }
