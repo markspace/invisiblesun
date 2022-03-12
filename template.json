@@ -9,49 +9,79 @@
             "npc"
         ],
         "templates": {
-            "health":{
-                "injuries":{
-                    "value":0,
-                    "max":3
+            "health": {
+                "injuries": {
+                    "value": 0,
+                    "max": 3
                 },
-                "wounds":{
-                    "value":0,
-                    "max":3
+                "wounds": {
+                    "value": 0,
+                    "max": 3
                 },
-                "anguish":{
-                    "value":0,
-                    "max":3
+                "anguish": {
+                    "value": 0,
+                    "max": 3
                 }
             },
             "vislae": {
-                "style":"",
-                "heart":"",
-                "forte":"",
-                "soul":"",
-                "home":"",
-                "neighborhood":"",
-                "shadow_skill":"",
-                "shadow_memento":"",
-                "quirk":"",
-                "connections":"",
-                "npc_bonds":"",
-                "acumen":0,
-                "crux":0,
-                "certes":0,
-                "qualia":0,
-                "joy":0,
-                "despair":0
-
-
-
+                "style": "",
+                "heart": "",
+                "forte": "",
+                "soul": "",
+                "home": "",
+                "neighborhood": "",
+                "shadow_skill": "",
+                "shadow_memento": "",
+                "quirk": "",
+                "connections": "",
+                "npc_bonds": "",
+                "acumen": 0,
+                "crux": 0,
+                "certes": 0,
+                "qualia": 0,
+                "joy": 0,
+                "despair": 0
             }
         },
-        "vance": {},
-        "maker": {},
-        "weaver": {},
-        "goetic": {},
-        "apostate": {},
-        "npc": {}
+        "vance": {
+            "templates": [
+                "health",
+                "vislae"
+            ]
+        },
+        "maker": {
+            "templates": [
+                "health",
+                "vislae"
+            ]
+        },
+        "weaver": {
+            "templates": [
+                "health",
+                "vislae"
+            ]
+        },
+        "goetic": {
+            "templates": [
+                "health",
+                "vislae"
+            ]
+        },
+        "apostate": {
+            "templates": [
+                "health",
+                "vislae"
+            ]
+        },
+        "npc": {
+            "templates":["health"],
+            "level":0,
+            "defences":"",
+            "armor":0,
+            "modifications":"",
+            "special_abilities":"",
+            "gm_shift":""
+        }
     },
     "Item": {
         "types": [
@@ -134,7 +164,6 @@
             "enhanced": "",
             "diminished": "",
             "royalty": ""
-
         }
     }
 }
